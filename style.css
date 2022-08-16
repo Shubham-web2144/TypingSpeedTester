@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3773bc;
+}
+.wrapper {
+    position: relative;
+    width: 600px;
+    padding: 12px 15px;
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 4px -3px 10px rgba(0,0,0,0.09);
+    border: 1px solid #ccc;
+}
+.paragraph__box {
+    position: relative;
+    width: 100%;
+    height: 255px;
+    overflow-y: scroll;
+    word-break: break-all;
+}
+.paragraph__box::-webkit-scrollbar {
+    width: 0px;
+}
+.paragraph__box p {
+    font-size: 18px;
+    font-weight: 300;
+    word-spacing: 0.8px;
+    letter-spacing:1px;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(50, 50, 50, 0.692);
+}
+
+.paragraph__indics {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 6px;
+    border-top: 1px solid #ccc;
+}
+.timer span, .mistake span, .wpm span {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.timer span {
+    color: #2ac14b;
+}
+.mistake span {
+    color: rgb(212, 46, 46);
+    
+}
+.wpm span {
+    color: rgb(241, 184, 25);
+}
+
+.btn button {
+    width: 130px;
+    height: 38px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background-color: #3773bc;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+.correct {
+    color: rgb(20, 248, 20);
+}
+.incorrect {
+    color: rgb(244, 24, 24);
+    background-color: rgba(255, 42, 42, 0.484);
+}
+.paragraph__box p span {
+    position: relative;
+}
+
+.input__field {
+    opacity: 0;
+}
